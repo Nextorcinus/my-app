@@ -1,0 +1,592 @@
+{
+  "heroes": [
+    {
+      "hero-name": "Natalia",
+      "hero-class": "infantry",
+      "rarity": "SSR Legendary",
+      "generation": 1,
+      "stats": {
+        "exploration": {
+          "attack": 1873,
+          "defense": 2220,
+          "health": 36630
+        },
+        "expedition": {
+          "attack": "200.16%",
+          "defense": "200.16%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "gale-force",
+      "widget-stats": {
+          "exploration": {
+            "attack": 373,
+            "defense": 495,
+            "health": 7425
+          },
+          "expedition": {
+            "lethality": "55.50%",
+            "Health": "55.50%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "lethality",
+        "widget-ability-description": {
+              "exploration": "increasing damage dealt by",
+              "expedition": "increasing Rally Troops' Lethality by"
+        }
+    },
+    {
+      "hero-name": "Jeronimo",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 1,
+      "stats": {
+        "exploration": {
+          "attack": 2128,
+          "defense": 2220,
+          "health": 41624
+        },
+        "expedition": {
+          "attack": "260.2%",
+          "defense": "260.2%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "dawnbreak",
+      "widget-stats": {
+          "exploration": {
+            "attack": 431,
+            "defense": 562,
+            "health": 8437
+          },
+          "expedition": {
+            "lethality": "62.50%",
+            "Health": "62.50%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "attack",
+        "widget-ability-description": {
+          "exploration": "boosting damage dealt by",
+          "expedition": "Defender Troops' Lethality is increased by"
+        }
+    },
+    {
+      "hero-name": "Molly",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 1,
+      "stats": {
+        "exploration": {
+          "attack": 2220,
+          "defense": 2220,
+          "health": 22200
+        },
+        "expedition": {
+          "attack": "200.16%",
+          "defense": "200.16%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "yeti-spirit",
+      "widget-stats": {
+          "exploration": {
+            "attack": 450,
+            "defense": 450,
+            "health": 45000
+          },
+          "expedition": {
+            "lethality": "50%",
+            "Health": "50%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "defender",
+        "widget-ability-description": {
+            "exploration": "reducing his damage received by",
+            "expedition": "increasing Rally Troops' Attack by"
+        }
+    },
+    {
+      "hero-name": "Zinman",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 1,
+      "stats": {
+        "exploration": {
+          "attack": 2697,
+          "defense": 2220,
+          "health": 16650
+        },
+        "expedition": {
+          "attack": "200.16%",
+          "defense": "200.16%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "woodpecker",
+      "widget-stats": {
+          "exploration": {
+            "attack": 546,
+            "defense": 450,
+            "health": 3375
+          },
+          "expedition": {
+            "lethality": "50%",
+            "Health": "50%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "defender",
+        "widget-ability-description": {
+          "exploration": "increasing his Attack by",
+          "expedition": "increasing Defender Troops' Attack is increased by"
+        }
+    },
+    {
+      "hero-name": "Flint",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 2,
+      "stats": {
+        "exploration": {
+          "attack": 2043,
+          "defense": 2664,
+          "health": 39660
+        },
+        "expedition": {
+          "attack": "240.19%",
+          "defense": "240.19%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "dragonbane",
+      "widget-stats": {
+          "exploration": {
+            "attack": 414,
+            "defense": 540,
+            "health": 8100
+          },
+          "expedition": {
+            "lethality": "60%",
+            "Health": "60%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "defender",
+        "widget-ability-description": {
+          "exploration": "boosting Attack by",
+          "expedition": "increasing Defender Troops' Attack by"
+        }
+    },
+    {
+      "hero-name": "Philly",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 2,
+      "stats": {
+        "exploration": {
+          "attack": 2664,
+          "defense": 2220,
+          "health": 26640
+        },
+        "expedition": {
+          "attack": "240.19%",
+          "defense": "240.19%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "pharmacologica",
+      "widget-stats": {
+          "exploration": {
+            "attack": 540,
+            "defense": 540,
+            "health": 5400
+          },
+          "expedition": {
+            "lethality": "60%",
+            "Health": "60%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "defender",
+        "widget-ability-description": {
+          "exploration": "increasing their healing effects by",
+          "expedition": "increasing Defender Troops' Health by"
+        }
+    },
+    {
+      "hero-name": "Alonso",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 2,
+      "stats": {
+        "exploration": {
+          "attack": 3235,
+          "defense": 2220,
+          "health": 19980
+        },
+        "expedition": {
+          "attack": "240.19%",
+          "defense": "240.19%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "captain-ahab",
+      "widget-stats": {
+          "exploration": {
+            "attack": 655,
+            "defense": 540,
+            "health": 4050
+          },
+          "expedition": {
+            "lethality": "60%",
+            "Health": "60%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "lethality",
+        "widget-ability-description": {
+          "exploration": "healing your weakest hero by",
+          "expedition": "increasing Rally Troops' Lethality by"
+        }
+    },
+    {
+      "hero-name": "Logan",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 3,
+      "stats": {
+        "exploration": {
+          "attack": 2554,
+          "defense": 3330,
+          "health": 49950
+        },
+        "expedition": {
+          "attack": "290.23%",
+          "defense": "290.23%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "first-of-steel",
+      "widget-stats": {
+          "exploration": {
+            "attack": 482,
+            "defense": 630,
+            "health": 9450
+          },
+          "expedition": {
+            "lethality": "70%",
+            "Health": "70%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "defense",
+        "widget-ability-description": {
+          "exploration": "make them more powerful and deal damage by",
+          "expedition": "increasing Defender Troops' Defense by"
+        }
+    },
+    {
+      "hero-name": "Mia",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 3,
+      "stats": {
+        "exploration": {
+          "attack": 3330,
+          "defense": 3330,
+          "health": 33330
+        },
+        "expedition": {
+          "attack": "290.23%",
+          "defense": "290.23%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "fate-crystal",
+      "widget-stats": {
+          "exploration": {
+            "attack": 630,
+            "defense": 630,
+            "health": 6300
+          },
+          "expedition": {
+            "lethality": "70%",
+            "Health": "70%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "attack",
+        "widget-ability-description": {
+          "exploration": "increasing the upper limit and lower limit of all skills of Mia by",
+          "expedition": "increasing Rally Troops' Attack by"
+        }
+    },
+    {
+      "hero-name": "Greg",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 3,
+      "stats": {
+        "exploration": {
+          "attack": 4045,
+          "defense": 3330,
+          "health": 24974
+        },
+        "expedition": {
+          "attack": "290.2%",
+          "defense": "290.2%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "state-edith",
+      "widget-stats": {
+          "exploration": {
+            "attack": 764,
+            "defense": 630,
+            "health": 4725
+          },
+          "expedition": {
+            "lethality": "70%",
+            "Health": "70%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "health",
+        "widget-ability-description": {
+          "exploration": "dealing Attack by",
+          "expedition": "increasing Rally Troops' Health by"
+        }
+    },
+    {
+      "hero-name": "Ahmose",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 4,
+      "stats": {
+        "exploration": {
+          "attack": 3150,
+          "defense": 4106,
+          "health": 61604
+        },
+        "expedition": {
+          "attack": "370.29%",
+          "defense": "370.29%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "guardian-relic",
+      "widget-stats": {
+          "exploration": {
+            "attack": 638,
+            "defense": 832,
+            "health": 12487
+          },
+          "expedition": {
+            "lethality": "92.5%",
+            "Health": "92.5%"
+          }
+        },
+        "widget-type": "self",
+        "widget-ability": "health",
+        "widget-ability-description": {
+          "exploration": "increasing Attack by",
+          "expedition": "increasing Defender Troops' Health by"
+        }
+    },
+    {
+      "hero-name": "Reina",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 4,
+      "stats": {
+        "exploration": {
+          "attack": 4106,
+          "defense": 4106,
+          "health": 41070
+        },
+        "expedition": {
+          "attack": "370.29%",
+          "defense": "370.29%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "raikiri",
+      "widget-stats": {
+          "exploration": {
+            "attack": 832,
+            "defense": 832,
+            "health": 8325
+          },
+          "expedition": {
+            "lethality": "92.50%",
+            "Health": "92.50%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "lethality",
+        "widget-ability-description": {
+          "exploration": "dealing Attack damage with normal attack by",
+          "expedition": "increases Rally Troops' Lethality by"
+        }
+    },
+    {
+      "hero-name": "Lynn",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 4,
+      "stats": {
+        "exploration": {
+          "attack": 4989,
+          "defense": 4106,
+          "health": 30802
+        },
+        "expedition": {
+          "attack": "370.29%",
+          "defense": "370.29%"
+        }
+      },
+      "widget": {"has-widget": true},
+      "widget-name": "ella-tear",
+      "widget-stats": {
+          "exploration": {
+            "attack": 1050,
+            "defense": 832,
+            "health": 6243
+          },
+          "expedition": {
+            "lethality": "92.50%",
+            "Health": "92.50%"
+          }
+        },
+        "widget-type": "rally",
+        "widget-ability": "defender-lethality",
+        "widget-ability-description": {
+          "exploration": "lynn increases Attack by",
+          "expedition": "increasing Defender Troops' Lethality by"
+        }
+    },
+    {
+      "hero-name": "Hector",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 5,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Norah",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 5,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Gwen",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 5,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Wu Ming",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 6,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Renee",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 6,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Wayne",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 6,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Edith",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 7,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Gordon",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 7,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Bradley",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 7,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Gatot",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 8,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Sonya",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 8,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Hendrik",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 8,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Magnus",
+      "hero-class": "infantry",
+      "rarity": "mythic",
+      "generation": 9,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Fred",
+      "hero-class": "lancer",
+      "rarity": "mythic",
+      "generation": 9,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    },
+    {
+      "hero-name": "Xura",
+      "hero-class": "marksman",
+      "rarity": "mythic",
+      "generation": 9,
+      "stats": { ... },
+      "widget": {"has-widget": false}
+    }
+  ]
+}
