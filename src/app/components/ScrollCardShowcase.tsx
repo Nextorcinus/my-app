@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { cards } from './cards'
+import heroesJson from '../data/heroes.json'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -20,6 +20,26 @@ export interface CardData {
   image: string
 }
 
+// Fungsi bantu untuk kapitalisasi
+function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1)
+}
+
+// Konversi heroes.json menjadi cards[]
+const cards: CardData[] = heroesJson.heroes
+  .filter((hero) => hero.generation <= 9)
+  .map((hero) => ({
+    name: hero['hero-name'].toUpperCase(),
+    rarity: hero.rarity,
+    class: capitalize(hero['hero-class']),
+    attack: hero.stats?.exploration?.attack,
+    def: hero.stats?.exploration?.defense,
+    health: hero.stats?.exploration?.health,
+    expAttack: hero.stats?.expedition?.attack,
+    expDef: hero.stats?.expedition?.defense,
+    image: `/${hero['hero-name'].toLowerCase().replace(/\s+/g, '-')}.png`,
+  }))
+
 export default function ScrollCardShowcase() {
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -33,7 +53,7 @@ export default function ScrollCardShowcase() {
       onUpdate: (self) => {
         const newIndex = Math.min(
           cards.length - 1,
-          Math.floor(self.progress * cards.length )
+          Math.floor(self.progress * cards.length)
         )
         setActiveIndex(newIndex)
       },
@@ -81,13 +101,14 @@ export default function ScrollCardShowcase() {
             )}
             {activeCard.expAttack && (
               <p>
-                Attack:{' '}
+                Expedition Attack:{' '}
                 <span className="text-green-400">{activeCard.expAttack}</span>
               </p>
             )}
             {activeCard.expDef && (
               <p>
-                Def: <span className="text-green-400">{activeCard.expDef}</span>
+                Expedition Def:{' '}
+                <span className="text-green-400">{activeCard.expDef}</span>
               </p>
             )}
           </div>
@@ -125,7 +146,7 @@ export default function ScrollCardShowcase() {
                   <img
                     src={card.image}
                     alt={card.name}
-                    className="w-full  object-contain "
+                    className="w-full object-contain"
                   />
                 </div>
               )
