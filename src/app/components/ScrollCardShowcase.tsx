@@ -62,10 +62,43 @@ export default function ScrollCardShowcase() {
 
   const activeCard = cards[activeIndex]
 
+  function getPreviousHeroStat(
+    heroes: typeof heroesJson.heroes,
+    current: any,
+    type: 'attack' | 'defense'
+  ) {
+    const prev = [...heroes]
+      .filter(
+        (h) =>
+          h['hero-class'] === current['hero-class'] &&
+          h.generation < current.generation &&
+          h.stats?.expedition?.[type]
+      )
+      .sort((a, b) => b.generation - a.generation)[0]
+
+    if (!prev) return null
+
+    return {
+      value: prev.stats.expedition[type],
+      name: prev['hero-name'],
+    }
+  }
+
+  const rawHero = heroesJson.heroes.find(
+    (h) => h['hero-name'].toUpperCase() === activeCard.name
+  )
+
+  const prevAttack = rawHero
+    ? getPreviousHeroStat(heroesJson.heroes, rawHero, 'attack')
+    : null
+  const prevDef = rawHero
+    ? getPreviousHeroStat(heroesJson.heroes, rawHero, 'defense')
+    : null
+
   return (
     <section
       id="stack-section"
-      className="relative h-[100vh] bg-black text-white"
+      className="relative h-[100vh] bg-zinc-800 text-white"
     >
       <div className="sticky top-0 h-screen w-full flex items-center justify-center">
         <div className="flex gap-16 items-center">
@@ -82,6 +115,7 @@ export default function ScrollCardShowcase() {
               <span className="text-gray-400">Class:</span>{' '}
               <span className="text-green-400">{activeCard.class}</span>
             </p>
+            <p className="text-2xl white mt-6 mb-2"> STATS </p>
             {activeCard.attack && (
               <p>
                 Attack:{' '}
@@ -99,16 +133,43 @@ export default function ScrollCardShowcase() {
                 <span className="text-green-400">{activeCard.health}</span>
               </p>
             )}
+            <p className="text-2xl white mt-6 mb-2"> EXPEDITION </p>
             {activeCard.expAttack && (
-              <p>
-                Expedition Attack:{' '}
+              <p className="flex items-center gap-2">
+                Attack:{' '}
                 <span className="text-green-400">{activeCard.expAttack}</span>
+                {prevAttack && (
+                  <span className="flex items-center gap-1">
+                    {parseFloat(activeCard.expAttack) >
+                    parseFloat(prevAttack.value) ? (
+                      <span className="text-green-400">↑</span>
+                    ) : (
+                      <span className="text-red-400">↓</span>
+                    )}
+                    <span className="text-red-400">{prevAttack.value}</span>
+                    <span className="text-gray-400">{prevAttack.name}</span>
+                  </span>
+                )}
               </p>
             )}
+
             {activeCard.expDef && (
-              <p>
-                Expedition Def:{' '}
-                <span className="text-green-400">{activeCard.expDef}</span>
+              <p className="flex items-center gap-2">
+                Def: <span className="text-green-400">{activeCard.expDef}</span>
+                {prevDef && (
+                  <span className="flex items-center gap-1">
+                    {parseFloat(activeCard.expDef) >
+                    parseFloat(prevDef.value) ? (
+                      <span className="text-green-400">↑</span>
+                    ) : (
+                      <span className="text-red-400">↓</span>
+                    )}
+                    <span className="text-red-400">{prevDef.value}</span>
+                    <span className="text-gray-400">
+                      {prevDef.name}
+                    </span>
+                  </span>
+                )}
               </p>
             )}
           </div>
@@ -118,35 +179,39 @@ export default function ScrollCardShowcase() {
             {cards.map((card, index) => {
               const offset = index - activeIndex
               const isActive = index === activeIndex
-              const isAfter = index > activeIndex
+              const isBefore = offset < 0 && offset >= -10
 
               return (
                 <div
                   key={card.name}
-                  className={`absolute transition-all duration-500 ease-in-out ${
+                  className={`absolute transition-all duration-500  ease-out ${
                     isActive
-                      ? 'z-20 scale-110 opacity-100 shadow-[0_12px_24px_rgba(0,0,0,0.6)] rounded-lg'
-                      : isAfter
+                      ? 'z-20 opacity-100 scale-110 shadow-[0_12px_24px_rgba(0,0,0,0.6)] rounded-lg'
+                      : isBefore
                       ? 'opacity-40'
                       : 'hidden'
                   }`}
                   style={{
                     transform: isActive
-                      ? 'translateX(-40px) translateY(-40px) scale(1.1)'
-                      : `translateX(${offset * 20}px) translateY(${
-                          offset * 10
+                      ? 'translateX(-50px) translateY(-10px) scale(1.5)'
+                      : `translateX(${offset * -15}px) translateY(${
+                          offset * -5
                         }px) scale(1)`,
                     left: '50%',
                     top: '50%',
                     transformOrigin: 'center',
                     translate: '-50% -50%',
                     zIndex: 10 - Math.abs(offset),
+                    transition: 'all 0.5s elastic-out',
                   }}
                 >
                   <img
                     src={card.image}
                     alt={card.name}
                     className="w-full object-contain"
+                    style={{
+                      opacity: isActive ? 1 : 0.4,
+                    }}
                   />
                 </div>
               )
