@@ -1224,41 +1224,6 @@
         "expedition": "increasing rallly troops Attack by"
       }
     },
-    {
-      "hero-name": "Rufus",
-      "hero-class": "marksman",
-      "rarity": "mythic",
-      "generation": 11,
-      "stats": {
-        "exploration": {
-          "attack": 18042,
-          "defense": 14850,
-          "health": 111388
-        },
-        "expedition": {
-          "attack": "1281.02%",
-          "defense": "1281.02%"
-        }
-      },
-      "widget": { "has-widget": true },
-      "widget-name": "meteor-blaster",
-      "widget-stats": {
-        "exploration": {
-          "attack": 3652,
-          "defense": 3010,
-          "health": 22578
-        },
-        "expedition": {
-          "lethality": "320%",
-          "Health": "320%"
-        }
-      },
-      "widget-type": "rally",
-      "widget-ability": "attack",
-      "widget-ability-description": {
-        "exploration": "increasing Attack by",
-        "expedition": "increasing rallly troops Attack by"
-      }
-    }
+   
   ]
 }

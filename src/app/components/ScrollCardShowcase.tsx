@@ -27,7 +27,7 @@ function capitalize(str: string) {
 
 // Konversi heroes.json menjadi cards[]
 const cards: CardData[] = heroesJson.heroes
-  .filter((hero) => hero.generation <= 9)
+  .filter((hero) => hero.generation <= 11)
   .map((hero) => ({
     name: hero['hero-name'].toUpperCase(),
     rarity: hero.rarity,
