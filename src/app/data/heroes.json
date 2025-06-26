@@ -39,7 +39,7 @@
     {
       "hero-name": "Jeronimo",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 1,
       "stats": {
         "exploration": {
@@ -75,7 +75,7 @@
     {
       "hero-name": "Molly",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 1,
       "stats": {
         "exploration": {
@@ -111,7 +111,7 @@
     {
       "hero-name": "Zinman",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 1,
       "stats": {
         "exploration": {
@@ -147,7 +147,7 @@
     {
       "hero-name": "Flint",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 2,
       "stats": {
         "exploration": {
@@ -183,7 +183,7 @@
     {
       "hero-name": "Philly",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 2,
       "stats": {
         "exploration": {
@@ -219,7 +219,7 @@
     {
       "hero-name": "Alonso",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 2,
       "stats": {
         "exploration": {
@@ -255,7 +255,7 @@
     {
       "hero-name": "Logan",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 3,
       "stats": {
         "exploration": {
@@ -291,7 +291,7 @@
     {
       "hero-name": "Mia",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 3,
       "stats": {
         "exploration": {
@@ -327,7 +327,7 @@
     {
       "hero-name": "Greg",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 3,
       "stats": {
         "exploration": {
@@ -363,7 +363,7 @@
     {
       "hero-name": "Ahmose",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 4,
       "stats": {
         "exploration": {
@@ -399,7 +399,7 @@
     {
       "hero-name": "Reina",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 4,
       "stats": {
         "exploration": {
@@ -435,7 +435,7 @@
     {
       "hero-name": "Lynn",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 4,
       "stats": {
         "exploration": {
@@ -471,7 +471,7 @@
     {
       "hero-name": "Hector",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 5,
       "stats": {
         "exploration": {
@@ -507,7 +507,7 @@
     {
       "hero-name": "Norah",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 5,
       "stats": {
         "exploration": {
@@ -543,7 +543,7 @@
     {
       "hero-name": "Gwen",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 5,
       "stats": {
         "exploration": {
@@ -579,7 +579,7 @@
     {
       "hero-name": "Wu Ming",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 6,
       "stats": {
         "exploration": {
@@ -615,7 +615,7 @@
     {
       "hero-name": "Renee",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 6,
       "stats": {
         "exploration": {
@@ -651,7 +651,7 @@
     {
       "hero-name": "Wayne",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 6,
       "stats": {
         "exploration": {
@@ -687,7 +687,7 @@
     {
       "hero-name": "Edith",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 7,
       "stats": {
         "exploration": {
@@ -723,7 +723,7 @@
     {
       "hero-name": "Gordon",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 7,
       "stats": {
         "exploration": {
@@ -759,7 +759,7 @@
     {
       "hero-name": "Bradley",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 7,
       "stats": {
         "exploration": {
@@ -795,7 +795,7 @@
     {
       "hero-name": "Gatot",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 8,
       "stats": {
         "exploration": {
@@ -831,7 +831,7 @@
     {
       "hero-name": "Sonya",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 8,
       "stats": {
         "exploration": {
@@ -867,7 +867,7 @@
     {
       "hero-name": "Hendrick",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 8,
       "stats": {
         "exploration": {
@@ -903,7 +903,7 @@
     {
       "hero-name": "Magnus",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 9,
       "stats": {
         "exploration": {
@@ -939,7 +939,7 @@
     {
       "hero-name": "Fred",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 9,
       "stats": {
         "exploration": {
@@ -975,7 +975,7 @@
     {
       "hero-name": "Xura",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 9,
       "stats": {
         "exploration": {
@@ -1011,7 +1011,7 @@
     {
       "hero-name": "Gregory",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 10,
       "stats": {
         "exploration": {
@@ -1047,7 +1047,7 @@
     {
       "hero-name": "Freya",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 10,
       "stats": {
         "exploration": {
@@ -1083,7 +1083,7 @@
     {
       "hero-name": "Blanchette",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 10,
       "stats": {
         "exploration": {
@@ -1119,7 +1119,7 @@
     {
       "hero-name": "Eleonora",
       "hero-class": "infantry",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 11,
       "stats": {
         "exploration": {
@@ -1155,7 +1155,7 @@
     {
       "hero-name": "Lloyd",
       "hero-class": "lancer",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 11,
       "stats": {
         "exploration": {
@@ -1191,7 +1191,7 @@
     {
       "hero-name": "Rufus",
       "hero-class": "marksman",
-      "rarity": "mythic",
+      "rarity": "SSR Legendary",
       "generation": 11,
       "stats": {
         "exploration": {
@@ -1224,6 +1224,5 @@
         "expedition": "increasing rallly troops Attack by"
       }
     }
-   
   ]
 }

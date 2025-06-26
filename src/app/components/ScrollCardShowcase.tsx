@@ -47,7 +47,7 @@ export default function ScrollCardShowcase() {
     ScrollTrigger.create({
       trigger: '#stack-section',
       start: 'top top',
-      end: () => `+=${cards.length * 300}`,
+      end: () => `+=${cards.length * 750}`,
       pin: true,
       scrub: 1,
       onUpdate: (self) => {
@@ -101,73 +101,77 @@ export default function ScrollCardShowcase() {
       className="relative h-[100vh] bg-zinc-800 text-white"
     >
       <div className="sticky top-0 h-screen w-full flex items-center justify-center">
-        <div className="flex gap-16 items-center">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center  ">
           {/* Info */}
           <div className="w-[300px]">
-            <h1 className="text-3xl font-bold text-pink-400">
+            <h1 className="text-3xl font-russo title">
               {activeCard.name}
             </h1>
             <p>
-              <span className="text-gray-400">Rarity:</span>{' '}
-              <span className="text-green-400">{activeCard.rarity}</span>
+              <span className="text-gray-400 text-xl font-vt323">Rarity:</span>{' '}
+              <span className="desc text-xl font-vt323">{activeCard.rarity}</span>
             </p>
             <p>
-              <span className="text-gray-400">Class:</span>{' '}
-              <span className="text-green-400">{activeCard.class}</span>
+              <span className="text-gray-400 text-xl font-vt323">Class:</span>{' '}
+              <span className="desc text-xl font-vt323">{activeCard.class}</span>
             </p>
-            <p className="text-2xl white mt-6 mb-2"> STATS </p>
+            <p className="text-xl mt-4 mb-2 md:text-2xl font-vt323  text-zinc-300">
+              {' '}
+              STATS{' '}
+            </p>
             {activeCard.attack && (
-              <p>
+              <p className="font-vt323 text-xl text-gray-400">
                 Attack:{' '}
-                <span className="text-green-400">{activeCard.attack}</span>
+                <span className="desc text-xl">{activeCard.attack}</span>
               </p>
             )}
             {activeCard.def && (
-              <p>
-                Def: <span className="text-green-400">{activeCard.def}</span>
+              <p className="font-vt323 text-xl text-gray-400">
+                Def: <span className="desc">{activeCard.def}</span>
               </p>
             )}
             {activeCard.health && (
-              <p>
+              <p className="font-vt323 text-gray-400 text-xl">
                 Health:{' '}
-                <span className="text-green-400">{activeCard.health}</span>
+                <span className="desc">{activeCard.health}</span>
               </p>
             )}
-            <p className="text-2xl white mt-6 mb-2"> EXPEDITION </p>
+            <p className="text-xl mt-4 mb-2 md:text-2xl font-vt323 text-zinc-300">
+              {' '}
+              EXPEDITION{' '}
+            </p>
             {activeCard.expAttack && (
-              <p className="flex items-center gap-2">
+              <p className="flex items-center gap-2 font-vt323 text-xl text-gray-400">
                 Attack:{' '}
-                <span className="text-green-400">{activeCard.expAttack}</span>
+                <span className="desc text-xl">{activeCard.expAttack}</span>
                 {prevAttack && (
                   <span className="flex items-center gap-1">
                     {parseFloat(activeCard.expAttack) >
                     parseFloat(prevAttack.value) ? (
-                      <span className="text-green-400">↑</span>
+                      <span className="desc text-xl">↑</span>
                     ) : (
-                      <span className="text-red-400">↓</span>
+                      <span className="title text-xl">↓</span>
                     )}
-                    <span className="text-red-400">{prevAttack.value}</span>
-                    <span className="text-gray-400">{prevAttack.name}</span>
+                    <span className="title text-xl">{prevAttack.value}</span>
+                    <span className="text-gray-400 text-xl">{prevAttack.name}</span>
                   </span>
                 )}
               </p>
             )}
 
             {activeCard.expDef && (
-              <p className="flex items-center gap-2">
-                Def: <span className="text-green-400">{activeCard.expDef}</span>
+              <p className="flex items-center gap-2 font-vt323 text-xl text-gray-400">
+                Def: <span className="desc">{activeCard.expDef}</span>
                 {prevDef && (
                   <span className="flex items-center gap-1">
                     {parseFloat(activeCard.expDef) >
                     parseFloat(prevDef.value) ? (
-                      <span className="text-green-400">↑</span>
+                      <span className="desc text-xl">↑</span>
                     ) : (
-                      <span className="text-red-400">↓</span>
+                      <span className="title text-xl">↓</span>
                     )}
-                    <span className="text-red-400">{prevDef.value}</span>
-                    <span className="text-gray-400">
-                      {prevDef.name}
-                    </span>
+                    <span className="title text-xl">{prevDef.value}</span>
+                    <span className="text-gray-400 text-xl">{prevDef.name}</span>
                   </span>
                 )}
               </p>
@@ -175,11 +179,11 @@ export default function ScrollCardShowcase() {
           </div>
 
           {/* Stack cards */}
-          <div className="relative w-[320px] h-[480px]">
+          <div className="relative w-[220px] h-[330px] md:w-[320px] md:h-[480px]">
             {cards.map((card, index) => {
               const offset = index - activeIndex
               const isActive = index === activeIndex
-              const isBefore = offset < 0 && offset >= -10
+              const isBefore = offset < 0 && offset >= -8
 
               return (
                 <div
@@ -194,7 +198,7 @@ export default function ScrollCardShowcase() {
                   style={{
                     transform: isActive
                       ? 'translateX(-50px) translateY(-10px) scale(1.5)'
-                      : `translateX(${offset * -15}px) translateY(${
+                      : `translateX(${offset * -10}px) translateY(${
                           offset * -5
                         }px) scale(1)`,
                     left: '50%',
